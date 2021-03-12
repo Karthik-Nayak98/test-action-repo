@@ -14,6 +14,6 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         issue_message: 'Hello @${{github.actor}}, Thank you for opening an issue :partying_face:'
-        PR_message: |-
-                      '<h3> :partying_face: Congratulations :tada: </h3>
+        PR_message:
+                      '<h1> :partying_face: Congratulations :tada: </h1>
                       :pray: Thank you @${{github.actor}} for taking our your time and contributing to our project. Our team will now review this and if everything looks fine it will be merged'
