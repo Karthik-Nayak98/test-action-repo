@@ -13,8 +13,9 @@ jobs:
     - uses: Karthik-Nayak98/Greeting-action@main
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        issue_message: 'Hello @${{github.actor}}, Thank you for opening an issue :partying_face:'
+        issue_message: 'Hello @${{github.actor}}, <br>
+                        Thank you for opening an issue. :partying_face: <br>
+                        <i> Check this <a href="https://docs.google.com/document/d/1WYYc2ymImxS6-TKB6pRX77A9zpXb_ujGjdpfMaTDXwc/edit">guide</a> before contributing.'
         PR_message:
                       '<h1> :partying_face: Congratulations :tada: </h1>:pray:
-                      Thank you @${{github.actor}} for taking our your time and contributing to our project. Our team will now review this and if everything looks fine it will be merge.<br>
-                      <i> Check this <a href="https://docs.google.com/document/d/1WYYc2ymImxS6-TKB6pRX77A9zpXb_ujGjdpfMaTDXwc/edit">guide</a> before contributing.'
+                      Thank you @${{github.actor}} for taking our your time and contributing to our project. Our team will now review this and if everything looks fine it will be merge.'
