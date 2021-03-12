@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: Karthik-Nayak98/Greeting-action@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Hello @${{github.actor}}, Thank you opening an issue. '
         pr-message: '
           # :partying_face: Congratulations :tada:
