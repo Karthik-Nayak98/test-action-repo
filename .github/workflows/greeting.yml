@@ -1,12 +1,16 @@
 name: Greetings
 
-on: [pull_request, issues]
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
 
 jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: Karthik-Nayak98/Greeting-action@v1
+    - uses: Karthik-Nayak98/Greeting-action@v1.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         issue_message: 'Hello @${{github.actor}}, Thank you opening an issue.'
