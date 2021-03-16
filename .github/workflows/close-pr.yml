@@ -1,10 +1,8 @@
 name: Close-pr-issue
 
 on:
-  push:
-    branches:
-     - master
-     - main
+  pull_request:
+    types: [closed]
 
 jobs:
   close-pr-issue:
