@@ -1,5 +1,5 @@
 name: Close-pr-issue
-description: Close PR and issue after merging to main or master branch.
+
 on:
   push:
     branches:
